@@ -1,16 +1,46 @@
-# inbank_frontend
+# InBank Frontend
 
-A new Flutter project.
+This project is a frontend application for the InBank loan application service.
+It is built using Flutter and communicates with the backend API to
+display loan options and handle loan applications.
 
-## Getting Started
+## Technologies Used
+- Flutter
+- Dart
 
-This project is a starting point for a Flutter application.
+## Requirements
+- Flutter
 
-A few resources to get you started if this is your first Flutter project:
+## Installation
+To install and run the application, please follow these steps:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Clone the repository.
+2. Navigate to the root directory of the project.
+3. Run `flutter pub get` to install the required dependencies.
+4. Run `flutter run` to start the application in debug mode.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Functionality
+The InBank Frontend application provides a form for submitting loan applications.
+The form consists of two sliders for selecting the loan amount and loan period,
+and a text field for entering the national ID number.
+The application communicates with the backend API to calculate the approved
+loan amount and loan period, which are displayed to the user.
+
+## Components
+The application consists of the following main components:
+
+### LoanForm
+The LoanForm component displays the loan application form,
+including the sliders for selecting the loan amount and loan period
+and the text field for entering the national ID number.
+It communicates with the backend API to calculate the approved loan amount
+and loan period based on the form inputs.
+
+### ApiService
+The ApiService component provides methods for making API calls to the backend API.
+It sends loan application information to the backend API and receives a response
+with the approved loan amount and loan period.
+
+## Contributors
+This frontend application was developed by Jürgen Tihanov as a part of the application
+for an InBank software developer internship.
